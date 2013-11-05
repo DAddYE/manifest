@@ -2,18 +2,14 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".." />
+           fetch="http://android.googlesource.com/" 
+           review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-4.4_r1"
            remote="aosp"
            sync-j="4" />
-
-  <remote  name="cm"
-           fetch="git://github.com/" 
-           review="review.cyanogenmod.org" 
-           sync-j="4" />
 		   
   <remote  name="revolution"
-           fetch="https://github.com/RevolutionDev/"
+           fetch="git://github.com/RevolutionDev/"
            sync-j="4" />
 
   <project path="build" name="android_build" remote="revolution" revision="kk4.4" groups="pdk" >
@@ -282,7 +278,6 @@
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
   <!--project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" /-->
-  <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom" />
   <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
   <project path="hardware/qcom/msm8x74" name="platform/hardware/qcom/msm8x74" groups="qcom_msm8x74" />
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
@@ -441,8 +436,9 @@
   <project path="hardware/qcom/audio" name="hardware_qcom_audio" remote="revolution" revision="kk4.4" groups="qcom" />
   <project path="hardware/qcom/bt" name="hardware_qcom_bt" remote="revolution" revision="kk4.4" groups="qcom" />
   <project path="hardware/qcom/display" name="hardware_qcom_display" remote="revolution" revision="kk4.4" groups="qcom" />
+  <project path="hardware/qcom/keymaster" name="hardware_qcom_keymaster" remote="revolution" revision="kk4.4" groups="qcom" />
   <project path="hardware/qcom/media" name="hardware_qcom_media" remote="revolution" revision="kk4.4" groups="qcom" />
   <project path="hardware/qcom/power" name="hardware_qcom_power" remote="revolution" revision="kk4.4" groups="qcom" />
   <project path="hardware/ril" name="hardware_ril" remote="revolution" revision="kk4.4" groups="pdk" />
-  <project path="hardware/sony/DASH" name="CyanogenMod/android_hardware_sony_DASH" remote="cm" revision="cm-10.2" />
+  <project path="hardware/sony/DASH" name="android_hardware_sony_DASH" remote="revolution" revision="kk4.4" />
 </manifest>
