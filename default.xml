@@ -12,7 +12,7 @@
            fetch="git://github.com/RevolutionDev/"
            sync-j="4" />
 
-  <project path="build" name="android_build" remote="revolution" revision="kk4.4" groups="pdk" >
+  <project path="build" name="android_build" remote="revolution" revision="android-4.4" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -426,10 +426,14 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
 
   <!-- Sony Xperia MSM8x74 device files -->
-  <project name="android_kernel_sony_msm8974" path="kernel/sony/msm8974" remote="revolution" revision="kk4.4" />
+  <project path="kernel/sony/msm8974" name="android_kernel_sony_msm8974" remote="revolution" revision="kk4.4" />
   <project path="device/sony/qcom-common" name="device_sony_common" remote="revolution" revision="kk4.4" />
-  <project path="device/sony/honami" name="device_sony_honami" remote="revolution" revision="kk4.4" />
-  <project name="aosp_vendor_sony" path="vendor/sony" remote="revolution" revision="kk4.4" />
+  <project path="device/sony/honami" name="android_device_sony_honami" remote="revolution" revision="kk4.4" />
+  <project path="device/sony/togari" name="android_device_sony_togari" remote="revolution" revision="kk4.4" />
+  <project path="device/sony/common" name="android_device_sony_common" remote="revolution" revision="kk4.4" />
+  <project path="device/sony/rhine-common" name="android_device_sony_rhine-common" remote="revolution" revision="kk4.4" />
+  <project name="android_vendor_sony" path="vendor/sony" remote="revolution" revision="kk4.4" />
+  <project name="android_vendor_revolution" path="vendor/revolution" remote="revolution" revision="kk4.4" />
   
   <!-- Custom hardware repos, don'tuse AOSP ones -->
   <project path="hardware/libhardware" name="hardware_libhardware" remote="revolution" revision="kk4.4" groups="pdk" />  
