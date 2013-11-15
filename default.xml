@@ -8,7 +8,7 @@
            remote="aosp"
            sync-j="4" />
 		   
-  <remote  name="omni"
+  <remote  name="omnirom"
            fetch="git://github.com/omnirom/"
            sync-j="4" />		   
 		   
