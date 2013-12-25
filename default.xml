@@ -15,6 +15,10 @@
   <remote  name="revolution"
            fetch="git://github.com/RevolutionDev/"
            sync-j="4" />
+           
+  <remote  name="DAddYE"
+           fetch="git://github.com/DAddYE/"
+           sync-j="4" />
 
    <project path="build" name="android_build" remote="revolution" revision="kk4.4" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -446,7 +450,7 @@
   <project path="device/sony/togari" name="android_device_sony_togari" remote="revolution" revision="kk4.4" />
   <project path="device/sony/common" name="android_device_sony_common" remote="revolution" revision="kk4.4" />
   <project path="device/sony/rhine-common" name="android_device_sony_rhine-common" remote="revolution" revision="kk4.4" />
-  <project name="proprietary_vendor_sony" path="vendor/sony" remote="revolution" revision="kk4.4" />
+  <project name="proprietary_vendor_sony" path="vendor/sony" remote="DAddYE" revision="kk4.4" />
   <project name="android_system_core_mkbootimg" path="system/core/mkbootimg" remote="revolution" revision="kk4.4" />
   <project path="hardware/sony/DASH" name="android_hardware_sony_DASH" remote="revolution" revision="kk4.4" />
 </manifest>
